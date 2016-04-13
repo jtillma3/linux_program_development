@@ -1,4 +1,4 @@
-mkdir := $(abspath $(lastword $(MAKEFILE_LIST)))i
+mkdir := $(abspath $(lastword $(MAKEFILE_LIST)))
 curr_dir := $(notdir $(patsubst %/,%,$(dir $(mkdir))))
 MKDIR_P = mkdir -p
 all: dir main
